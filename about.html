@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Fitness store | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+            </div>
+        </div>
+    </div>
+  
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="C:\Users\lenovo\Desktop\Yashwant_Yadav_500108505_BTech CSE(H) AI&ML Batch-3\images\whitelogo.PNG" alt="About Image">
+            </div>
+            <div class="col-2">
+                <h1>About Us</h1>
+                <p>Welcome to Fitness Store, your ultimate destination for premium fitness wear blending style, comfort, and performance. Our belief goes beyond mere routine; it's a lifestyle. We're driven by a commitment to excellence, curating a diverse range of activewear catering to all shapes, sizes, and preferences. From sleek leggings to supportive sports bras, each item is crafted with precision for optimal comfort and functionality.</p>
+
+<p>What sets us apart is our dedication to exceptional customer service and fostering a community passionate about health and wellness. Whether you're a seasoned athlete or starting your journey, Fitness Store is here to support you every step of the way.</p>
+
+<p>Join us as we redefine your fitness apparel experience. Explore our collection today and elevate your workout wardrobe with Fitness Store.</p>
+
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                   <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                   <img src="images/black-logo.PNG">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col3">
+                   <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                   <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter<li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+           
+        </div>
+        <p class="copyright">© 2024 Online Store. All rights reserved.</p>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                } 
+        }
+         
+    </script>
+    
+        
+</body>
+</html>

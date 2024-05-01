@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fitness Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="Shopping Cart"></a>
+                <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" alt="Menu Icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contact">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Contact Us</h1>
+                    <p>Have a question or need assistance? Reach out to us using the form below or contact us directly via phone or email. We're here to help!</p>
+                    <div class="contact-info">
+                        <div>
+                            <span><i class="fa fa-phone"></i></span>
+                            <span>+1234567890</span>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <span>info@fitnessstore.com</span>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>123 Fitness Avenue, City, Country</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <form id="contant-form">
+                    <form action="#">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                   <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                   <img src="images/black-logo.PNG">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col3">
+                   <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                   <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter<li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+           
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                } 
+        }
+         
+    </script>
+
+   
+
+    <script>
+   // This function receives data from the HTML form and appends it to the Google Sheet
+function doPost(e) {
+  var sheet = SpreadsheetApp.openById("YOUR_GOOGLE_SHEET_ID").getActiveSheet();
+  var newRow = [
+    e.parameter.name,
+    e.parameter.email,
+    e.parameter.message
+  ];
+  sheet.appendRow(newRow);
+  return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
+}
+
+    </script>
+</body>
+</html>
